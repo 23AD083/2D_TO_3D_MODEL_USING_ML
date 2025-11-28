@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Details Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Room Details Prediction Report</h1>
+    </header>
+    <section>
+        <h2>Summary</h2>
+        <p>This report provides an overview of the predicted room details including the number of days to be worked, area, and walls.</p>
+    </section>
+    <section>
+        <h2>Predicted Room Details</h2>
+        <ul>
+            <li>Number of Days: {{ days }}</li>
+            <li>Area: {{ area }} sq. ft.</li>
+            <li>Walls: {{ walls }}</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Visualizations</h2>
+        <div>
+            <h3>Room Layout</h3>
+            <img src="{{ url_for('static', filename='figures/room_layout.png') }}" alt="Room Layout">
+        </div>
+        <div>
+            <h3>Area Distribution</h3>
+            <img src="{{ url_for('static', filename='figures/area_distribution.png') }}" alt="Area Distribution">
+        </div>
+    </section>
+    <section>
+        <h2>Real Object Images with Vertices</h2>
+        <img src="{{ url_for('static', filename='images/room_image.png') }}" alt="Room Image">
+        <p>Vertices: ({{ vertices | join(', ') }})</p>
+    </section>
+    <section>
+        <h2>Sample 2D Blueprints</h2>
+        <img src="{{ url_for('static', filename='figures/sample_blueprint.png') }}" alt="Sample Blueprint">
+    </section>
+    <footer>
+        <p>Report generated on {{ date }}</p>
+    </footer>
+</body>
+</html>

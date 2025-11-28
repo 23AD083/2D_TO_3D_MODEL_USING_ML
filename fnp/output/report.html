@@ -1,0 +1,596 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Plan Report</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background: #f5f5f5; }
+    .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    h1 { color: #333; border-bottom: 3px solid #0066cc; padding-bottom: 10px; }
+    h2 { color: #0066cc; margin-top: 20px; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 15px 0; }
+    .stat-box { background: #f0f8ff; border-left: 4px solid #0066cc; padding: 15px; border-radius: 4px; }
+    .stat-label { font-size: 0.9em; color: #666; }
+    .stat-value { font-size: 1.8em; color: #0066cc; font-weight: bold; }
+    .stat-unit { font-size: 0.8em; color: #999; }
+    .visual { border: 1px solid #ddd; padding: 10px; margin: 15px 0; border-radius: 4px; }
+    .visual img { max-width: 100%; height: auto; }
+    .panel { margin-top: 20px; padding: 15px; background: #f9f9f9; border-radius: 4px; }
+    .download-link { display: inline-block; padding: 10px 15px; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; margin: 5px 5px 5px 0; }
+    .download-link:hover { background: #0052a3; }
+    pre { background: #f7f7f7; padding: 10px; overflow: auto; border-radius: 4px; border: 1px solid #ddd; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📐 Building Plan Report</h1>
+    
+    <h2>📊 Predictions & Statistics</h2>
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="stat-label">Number of Rooms</div>
+        <div class="stat-value">7</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Number of Walls</div>
+        <div class="stat-value">102</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Total Area</div>
+        <div class="stat-value">2.87</div>
+        <div class="stat-unit">sq meters</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Total Wall Length</div>
+        <div class="stat-value">90.59</div>
+        <div class="stat-unit">meters</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Estimated Work Days</div>
+        <div class="stat-value">1</div>
+        <div class="stat-unit">days (at ~15 sqm/day)</div>
+      </div>
+    </div>
+    
+    <h2>📐 2D Blueprint</h2>
+    <div class="visual">
+      <img src="blueprint.svg" alt="blueprint" />
+    </div>
+    
+    <h2>📥 Downloads</h2>
+    <div class="panel">
+      <a href="plan.obj" download class="download-link">⬇️ Download OBJ (3D Model)</a>
+      <a href="blueprint.svg" download class="download-link">⬇️ Download Blueprint (SVG)</a>
+    </div>
+    
+    <h2>🔢 Vertex Coordinates (x, y, z)</h2>
+    <div class="panel">
+      <p>Total vertices: <strong>102</strong></p>
+      <pre>[
+  [
+    1.26,
+    -3.35,
+    0.0
+  ],
+  [
+    1.26,
+    -3.45,
+    0.0
+  ],
+  [
+    2.99,
+    -3.45,
+    0.0
+  ],
+  [
+    2.99,
+    -3.35,
+    0.0
+  ],
+  [
+    -3.74,
+    -3.35,
+    0.0
+  ],
+  [
+    -3.74,
+    -3.45,
+    0.0
+  ],
+  [
+    -2.01,
+    -3.45,
+    0.0
+  ],
+  [
+    -2.01,
+    -3.35,
+    0.0
+  ],
+  [
+    3.0,
+    -3.25,
+    0.0
+  ],
+  [
+    3.0,
+    -3.33,
+    0.0
+  ],
+  [
+    3.03,
+    -3.32,
+    0.0
+  ],
+  [
+    3.04,
+    -3.28,
+    0.0
+  ],
+  [
+    3.21,
+    -3.28,
+    0.0
+  ],
+  [
+    3.22,
+    -3.32,
+    0.0
+  ],
+  [
+    3.25,
+    -3.33,
+    0.0
+  ],
+  [
+    3.25,
+    -3.25,
+    0.0
+  ],
+  [
+    1.0,
+    -3.25,
+    0.0
+  ],
+  [
+    1.0,
+    -3.33,
+    0.0
+  ],
+  [
+    1.03,
+    -3.32,
+    0.0
+  ],
+  [
+    1.04,
+    -3.28,
+    0.0
+  ],
+  [
+    1.21,
+    -3.28,
+    0.0
+  ],
+  [
+    1.22,
+    -3.32,
+    0.0
+  ],
+  [
+    1.25,
+    -3.33,
+    0.0
+  ],
+  [
+    1.25,
+    -3.25,
+    0.0
+  ],
+  [
+    -2.0,
+    -3.25,
+    0.0
+  ],
+  [
+    -2.0,
+    -3.33,
+    0.0
+  ],
+  [
+    -1.97,
+    -3.32,
+    0.0
+  ],
+  [
+    -1.96,
+    -3.28,
+    0.0
+  ],
+  [
+    -1.79,
+    -3.28,
+    0.0
+  ],
+  [
+    -1.78,
+    -3.32,
+    0.0
+  ],
+  [
+    -1.75,
+    -3.33,
+    0.0
+  ],
+  [
+    -1.75,
+    -3.25,
+    0.0
+  ],
+  [
+    -4.0,
+    -3.25,
+    0.0
+  ],
+  [
+    -4.0,
+    -3.33,
+    0.0
+  ],
+  [
+    -3.97,
+    -3.32,
+    0.0
+  ],
+  [
+    -3.96,
+    -3.28,
+    0.0
+  ],
+  [
+    -3.79,
+    -3.28,
+    0.0
+  ],
+  [
+    -3.78,
+    -3.32,
+    0.0
+  ],
+  [
+    -3.75,
+    -3.33,
+    0.0
+  ],
+  [
+    -3.75,
+    -3.25,
+    0.0
+  ],
+  [
+    3.0,
+    3.33,
+    0.0
+  ],
+  [
+    3.0,
+    3.25,
+    0.0
+  ],
+  [
+    3.25,
+    3.25,
+    0.0
+  ],
+  [
+    3.25,
+    3.33,
+    0.0
+  ],
+  [
+    3.22,
+    3.32,
+    0.0
+  ],
+  [
+    3.21,
+    3.28,
+    0.0
+  ],
+  [
+    3.04,
+    3.28,
+    0.0
+  ],
+  [
+    3.03,
+    3.32,
+    0.0
+  ],
+  [
+    1.0,
+    3.33,
+    0.0
+  ],
+  [
+    1.0,
+    3.25,
+    0.0
+  ],
+  [
+    1.25,
+    3.25,
+    0.0
+  ],
+  [
+    1.25,
+    3.33,
+    0.0
+  ],
+  [
+    1.22,
+    3.32,
+    0.0
+  ],
+  [
+    1.21,
+    3.28,
+    0.0
+  ],
+  [
+    1.04,
+    3.28,
+    0.0
+  ],
+  [
+    1.03,
+    3.32,
+    0.0
+  ],
+  [
+    -2.0,
+    3.33,
+    0.0
+  ],
+  [
+    -2.0,
+    3.25,
+    0.0
+  ],
+  [
+    -1.75,
+    3.25,
+    0.0
+  ],
+  [
+    -1.75,
+    3.33,
+    0.0
+  ],
+  [
+    -1.78,
+    3.32,
+    0.0
+  ],
+  [
+    -1.79,
+    3.28,
+    0.0
+  ],
+  [
+    -1.96,
+    3.28,
+    0.0
+  ],
+  [
+    -1.97,
+    3.32,
+    0.0
+  ],
+  [
+    -4.0,
+    3.33,
+    0.0
+  ],
+  [
+    -4.0,
+    3.25,
+    0.0
+  ],
+  [
+    -3.75,
+    3.25,
+    0.0
+  ],
+  [
+    -3.75,
+    3.33,
+    0.0
+  ],
+  [
+    -3.78,
+    3.32,
+    0.0
+  ],
+  [
+    -3.79,
+    3.28,
+    0.0
+  ],
+  [
+    -3.96,
+    3.28,
+    0.0
+  ],
+  [
+    -3.97,
+    3.32,
+    0.0
+  ],
+  [
+    3.26,
+    3.45,
+    0.0
+  ],
+  [
+    4.35,
+    3.34,
+    0.0
+  ],
+  [
+    4.35,
+    0.06,
+    0.0
+  ],
+  [
+    0.75,
+    -0.05,
+    0.0
+  ],
+  [
+    4.34,
+    -0.05,
+    0.0
+  ],
+  [
+    4.35,
+    -3.34,
+    0.0
+  ],
+  [
+    3.26,
+    -3.45,
+    0.0
+  ],
+  [
+    4.4,
+    -3.45,
+    0.0
+  ],
+  [
+    4.45,
+    3.4,
+    0.0
+  ],
+  [
+    1.26,
+    3.45,
+    0.0
+  ],
+  [
+    1.26,
+    3.35,
+    0.0
+  ],
+  [
+    2.99,
+    3.35,
+    0.0
+  ],
+  [
+    2.99,
+    3.45,
+    0.0
+  ],
+  [
+    -1.74,
+    3.45,
+    0.0
+  ],
+  [
+    -0.05,
+    3.34,
+    0.0
+  ],
+  [
+    -0.05,
+    -3.34,
+    0.0
+  ],
+  [
+    -1.74,
+    -3.45,
+    0.0
+  ],
+  [
+    0.99,
+    -3.45,
+    0.0
+  ],
+  [
+    0.05,
+    -3.34,
+    0.0
+  ],
+  [
+    0.05,
+    3.34,
+    0.0
+  ],
+  [
+    0.99,
+    3.45,
+    0.0
+  ],
+  [
+    -3.74,
+    3.45,
+    0.0
+  ],
+  [
+    -3.74,
+    3.35,
+    0.0
+  ],
+  [
+    -2.01,
+    3.35,
+    0.0
+  ],
+  [
+    -2.01,
+    3.45,
+    0.0
+  ],
+  [
+    -4.4,
+    3.45,
+    0.0
+  ],
+  [
+    -4.01,
+    -3.45,
+    0.0
+  ],
+  [
+    -4.35,
+    -0.06,
+    0.0
+  ],
+  [
+    -0.75,
+    0.05,
+    0.0
+  ],
+  [
+    -4.34,
+    0.05,
+    0.0
+  ]
+]</pre>
+    </div>
+    
+    <h2>📋 Plan Metadata</h2>
+    <div class="panel">
+      <pre>{
+  "scale": 100.0,
+  "height": 3.5,
+  "input_file": "C:/Users/Naviya/OneDrive/Desktop/fnp/sample_input/sample_blueprint_complex.png"
+}</pre>
+    </div>
+    
+    <hr />
+    <p style="text-align: center; color: #999; font-size: 0.9em;">Generated by 2D to 3D Building Blueprint Converter</p>
+  </div>
+</body>
+</html>

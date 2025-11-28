@@ -1,0 +1,12 @@
+Flask
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+plotly
+Jinja2
+requests
+opencv-python
+Pillow
+pytest

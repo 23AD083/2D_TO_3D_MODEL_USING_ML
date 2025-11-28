@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Room Details Report</title>
+</head>
+<body>
+    <header>
+        <h1>Room Details Prediction Report</h1>
+    </header>
+    <main>
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>This report provides an overview of the predicted room details including the number of days to be worked, area, and walls.</p>
+        </section>
+        <section id="predictions">
+            <h2>Predictions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Room Type</th>
+                        <th>Days to Work</th>
+                        <th>Area (sq ft)</th>
+                        <th>Walls</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for prediction in predictions %}
+                    <tr>
+                        <td>{{ prediction.room_type }}</td>
+                        <td>{{ prediction.days }}</td>
+                        <td>{{ prediction.area }}</td>
+                        <td>{{ prediction.walls }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+        <section id="visualizations">
+            <h2>Visualizations</h2>
+            <div>
+                <h3>Room Details Visualization</h3>
+                <img src="{{ url_for('static', filename='figures/room_details.png') }}" alt="Room Details Visualization">
+            </div>
+            <div>
+                <h3>Blueprints</h3>
+                <img src="{{ url_for('static', filename='figures/blueprint.png') }}" alt="Blueprint">
+            </div>
+        </section>
+        <section id="images">
+            <h2>Real Object Images</h2>
+            {% for image in images %}
+            <div class="image-container">
+                <img src="{{ url_for('static', filename=image.path) }}" alt="Room Image">
+                <p>Vertices: ({{ image.vertices | join(', ') }})</p>
+            </div>
+            {% endfor %}
+        </section>
+    </main>
+    <footer>
+        <p>Generated on {{ report_date }}</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/report.js') }}"></script>
+</body>
+</html>

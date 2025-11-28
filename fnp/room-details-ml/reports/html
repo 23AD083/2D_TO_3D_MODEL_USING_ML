@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Details Report</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Room Details Prediction Report</h1>
+    </header>
+    <main>
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>This report provides an overview of the predicted room details including the number of days to be worked, area, and walls.</p>
+        </section>
+        <section id="visualizations">
+            <h2>Visualizations</h2>
+            <div id="charts">
+                <!-- Placeholder for charts -->
+            </div>
+        </section>
+        <section id="blueprints">
+            <h2>Sample 2D Blueprints</h2>
+            <div id="blueprint-images">
+                <!-- Placeholder for blueprint images -->
+            </div>
+        </section>
+        <section id="images">
+            <h2>Real Object Images with Vertices</h2>
+            <div id="object-images">
+                <!-- Placeholder for object images with vertices -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Generated on: <span id="report-date"></span></p>
+    </footer>
+    <script src="../static/js/report.js"></script>
+</body>
+</html>
