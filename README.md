@@ -5,6 +5,7 @@ machine learning project
 <img width="1240" height="698" alt="image" src="https://github.com/user-attachments/assets/e4a0f054-bfec-48d5-afe1-bb2a1f79cd4d" />
 <img width="993" height="763" alt="image" src="https://github.com/user-attachments/assets/c8e6c9d2-727a-4d0e-9866-dedf47b805b1" />
 
+blender : obj
 
-
+<img width="801" height="619" alt="image" src="https://github.com/user-attachments/assets/f9356c29-fb79-4843-ac2e-745366f7cce6" />
 
